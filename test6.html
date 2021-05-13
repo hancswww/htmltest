@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width:100%; height:300px; display:block; background: red}
+    </style>
+    <script>
+        function btn(){
+            var obj=document.getElementById("div1");
+            if(obj.style.display=='block'){
+            document.getElementById("div1").style.display='none';
+            obj.style.transition="width 2s,height 2s";
+            }
+            else{document.getElementById("div1").style.display='block';
+            obj.style.transition="width 2s,height 2s";
+        }
+    }
+    </script>
+</head>
+<body>
+    <a href="#" onclick="btn()">click</a>
+    <div id="div1"></div>
+</body>
+</html>

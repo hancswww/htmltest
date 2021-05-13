@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background: orange;
+            text-align: center;
+        }
+        #wrapper{
+            text-align: center;
+            line-height:50px;
+        }
+
+        main{
+        /* flex */
+        }
+
+        header{
+            width: 100%; 
+            background: lightblue;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-all; /* 자동 줄바꿈 */
+        }
+        nav{
+            width:100%;
+
+        }
+
+        section{
+            width: 70%; 
+            background: rgb(70, 187, 226);
+            height:60vh;
+            /* 글자의 중간 정렬은 height와 동일하게 설정 */
+            /* %단위로 line-height 설정은 적용이 안됨 */
+            float:right;
+            text-align: left;
+        }
+
+        aside{
+            width: 30%; 
+            background: rgb(127, 200, 224);
+            float:right;
+            height:60vh;
+            
+        }
+
+     
+        
+        footer{
+            width: 100%; 
+            background: rgb(4, 168, 223);
+            float: bottom;
+        }
+
+/* 
+        Article{;  
+        } */
+
+        article{text-align: left;}
+
+        Article h1{background: pink; margin: 10px;}
+        Article h2{background: pink; margin: 10px; font-size:18px;}
+        Article h3{background: pink; margin: 10px;}
+        Article p{font-weight: lighter; }
+
+        ul{
+            background: cyan;
+            list-style:none;
+            padding-left:0px;           
+            display:inline-block;
+            width: 100%;
+        }
+        li{
+            background: yellow;
+            display: inline-block;
+            padding:10px 15px 10px 15px;
+            font-size: 12px;
+            font-family: 'Times New Roman', Times, serif;
+            width:20%
+        }
+        li:hover{
+            background:violet;
+            font-weight: bolder;
+            transition: all ease 0.5s;
+        }
+
+        div{text-align: center;}
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        header
+        <nav>
+            <div>
+                <ul>
+                    <li>MENU1</li>
+                    <li>MENU2</li>
+                    <li>MENU3</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside>aside</aside>
+        <section>section
+            <Article>
+                <h1>Article 1
+                    <p>1번 기사</p>
+                </h1>
+                <h2>Article 2
+                    <p>2번 기사</p>
+                </h2>
+                <h3>Article 3
+                    <p>3번 기사</p>
+                </h3>                    
+            </Article>
+
+        </section>
+        
+    <main>
+    <footer>footer
+        <address>
+            address
+        </address>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div> ul{list-style: none; display:flex; padding-left: 0px; /*display:flex; width:100%;*/ justify-content:center;
+            width: 100%;
+        background: whitesmoke;
+        }
+
+        div> ul> li> ul{
+            background: yellow;
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        div{
+            text-align: center;
+        }
+        /* 상위 메뉴  li 설정 */
+        div > ul> li{
+            width:20%;
+            padding: 10px 15px 10px 15px;
+            text-align: center;
+            /* background: chocolate; */
+        }
+
+        div>ul>li>ul{
+            display: none;
+        }
+
+        div>ul> li:hover{background: red;}
+
+        div>ul>li:hover>ul{ display: block;}
+
+        div>ul>li>ul>li:hover{
+            background: lightpink;
+        }
+
+        div>ul>li{ border: 1px solid green;
+            padding:0px
+}
+
+        div>ul>li>ul>li{ border: 1px solid green
+
+        }
+
+        a{
+            width: 100%; background: hotpink; display:inline-block; padding:6px
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <ul>
+        <li><a>MENU1</a>
+            <ul>
+                <li>menu1-1</li>
+                <li>menu1-2</li>
+            </ul>
+        </li>
+        <li><a>MENU2</a>
+            <ul>
+                <li>menu2-1</li>
+                <li>menu2-2</li>
+            </ul>
+        </li>
+        <li><a>MENU3</a>
+            <ul>
+                <li>menu3-1</li>
+                <li>menu3-2</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
